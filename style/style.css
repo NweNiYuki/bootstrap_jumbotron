@@ -1,0 +1,33 @@
+.jumbotron {
+    height: 450px;
+    padding-top: 50px; 
+    padding-left: 40px;
+    padding-bottom: 50px;
+   
+}
+h1 {
+    font-weight: bold;
+}
+.button {
+    size: 30px;
+}
+.row {
+    padding-top: 30px;
+}
+
+.text-wh {
+    color: white;
+    height: 300px;
+    padding: 50px 50px 50px 50px;
+    font-size: bold;
+}
+
+
+.div-bg-off-white{
+    background: #f8f5f5;
+}
+
+.div-bg-black{
+    background: black;
+}
+

@@ -34,19 +34,19 @@
         <div class="row">
             <div class="col-md-6 text-wh div-bg-black">
                 <h2 id="header1">Title Black</h2>
-                <p id="para1">Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
+                <p class="para1" >Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look.
                     Then, mix and
                     match with additional component themes and more.</p>
-<<<<<<< HEAD
-                    <button onclick="changeTitle()" type="button" value="Title Black" class="btn btn-outline-light">Click to Change title</button>
-=======
+<!-- <<<<<<< HEAD -->
+                    <!-- <button onclick="changeTitle()" type="button" value="Title Black" class="btn btn-outline-light">Click to Change title</button>
+======= -->
                     <button onclick="SwapHeader()" type="button" class="btn btn-outline-light">Click to Change title</button>
->>>>>>> 29bc2917858f7992971650ff8b616a7fc777c660
+<!-- >>>>>>> 29bc2917858f7992971650ff8b616a7fc777c660 -->
                 
             </div>
             <div class="col-md-6">
                 <h2 id="header2">Title White</h2>
-                <p id="para2">Or, keep it light and add a border for some added definition to the boundaries of your content.
+                <p class="para2" >Or, keep it light and add a border for some added definition to the boundaries of your content.
                     Be sure to look under the hood at the source HTML here as we've adjusted the alignment and
                     sizing of both column's content for equal-height.</p>
                     <button onclick="changeParagraph()" type="button" class="btn btn-outline-secondary">Click to Change Paragraph</button>
@@ -55,16 +55,28 @@
           <script>
 
 
-            var header1 = document.getElementById('header1').innerHTML;
-            var header2 = document.getElementById('header2').innerHTML;
+            
             
             function SwapHeader(){
+                var header1 = document.getElementById('header1').innerHTML;
+                var header2 = document.getElementById('header2').innerHTML;
                 document.getElementById('header1').innerHTML = header2;
                 document.getElementById('header2').innerHTML = header1;
             }
 
+            
+
           </script>
         
+        <script>
+            var para1 = document.querySelector('.para1').innerHTML;
+            var para2 = document.querySelector('.para2').innerHTML;
+
+            function changeParagraph(){
+                document.querySelector('.para1').innerHTML = para2;
+                document.querySelector('.para2').innerHTML = para1;
+            }
+        </script>
            
             
         </div>

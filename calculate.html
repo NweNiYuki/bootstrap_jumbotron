@@ -15,10 +15,10 @@
         <div class="container first">
             <div class="row">
               <div class="col">
-                <input type="number" id="n1" class="form-control" placeholder="First number">
+                <input type="number" id="n1" class="form-control" placeholder="First number" name="first" required>
               </div>
               <div class="col">
-                <input type="number" id="n2" class="form-control" placeholder="Last number">
+                <input type="number" id="n2" class="form-control" placeholder="Last number" name="last" required>
               </div>
             </div>
             
@@ -33,13 +33,13 @@
                         <button onclick="Sum()" type="button" class="btn btn-primary">+</button>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-secondary" >-</button>
+                        <button onclick="Subtract()" type="button" class="btn btn-secondary" >-</button>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-warning">*</button>
+                        <button onclick="Multiply()" type="button" class="btn btn-warning">*</button>
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-success">%</button>
+                        <button onclick="Divided()" type="button" class="btn btn-success">%</button>
                     </div>
 
                     
@@ -53,15 +53,36 @@
         </div>
 
         <script>
-           function Sum(){
+            
+           
+        function Sum(){
             var n1 = document.getElementById('n1').value;
             var n2 = document.getElementById('n2').value;
             var result = parseInt(n1)+parseInt(n2);
-            
-
-            document.getElementById('result').innerHTML = +result;
+            document.getElementById('result').innerHTML = result;
                 
            }
+
+        function Subtract(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+            var result = parseInt(n2)-parseInt(n1);
+            document.getElementById('result').innerHTML = result;
+           }
+
+        function Multiply(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+            var result = n1*n2;
+            document.getElementById('result').innerHTML = result;
+        }
+
+        function Divided(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+            var result = n1/n2;
+            document.getElementById('result').innerHTML = result;
+        }
             
         </script>
    

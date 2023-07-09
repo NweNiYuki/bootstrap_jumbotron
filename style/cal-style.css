@@ -1,0 +1,11 @@
+.first {
+    padding: 50px;
+}
+.button {
+    size: 30px;
+}
+#result {
+    text-align: center;
+    padding: 50px;
+    color: olivedrab;
+}
